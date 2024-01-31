@@ -1,0 +1,9 @@
+.dashboardContainer {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.dashboardContent {
+    grid-column: span 10 / span 10;
+    padding: 2rem;
+}

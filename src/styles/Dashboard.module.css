@@ -1,0 +1,21 @@
+.dashboardContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.welcomeText {
+    color: rgb(82, 44, 1);
+}
+
+.welcomeImage {
+    width: 70%;
+    border-radius: 0.5rem
+}
+
+.welcomeImage img {
+    width: 100%;
+    border-radius: 0.5rem
+}

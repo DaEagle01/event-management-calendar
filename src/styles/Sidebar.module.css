@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+}
+
+.sidebarContainer {
+    display: grid;
+    grid-column: span 2 / span 2;
+    background-color: #f2f2f2;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem
+}
+
+.sidebarOptions {
+    color: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #b3b3b3;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    text-decoration: none;
+}
+
+.sidebarOptions:hover {
+    background-color: #4f4f54;
+    color: white;
+}
+
+.sidebarOptionsActive {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 0.375rem;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    text-decoration: none;
+    background-color: #4f4f54;
+    color: white;
+}
+
+.iconStyle {
+    flex-shrink: 0;
+}
+
+.optionText {
+    font-size: large;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (min-width: 1024px) {
+    .sidebarContainer {
+        padding: 1.25rem;
+    }
+}
