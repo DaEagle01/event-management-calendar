@@ -48,6 +48,7 @@
 }
 
 .noEventsText {
+    text-align: center;
     color: rgb(82, 44, 1);
 }
 
@@ -69,7 +70,6 @@
 
     .noEventsText {
         font-size: 1rem;
-        text-align: center;
     }
 
     .noEventsImage {
