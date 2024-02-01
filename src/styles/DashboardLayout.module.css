@@ -7,3 +7,9 @@
     grid-column: span 10 / span 10;
     padding: 2rem;
 }
+
+@media (max-width: 767px) {
+    .dashboardContent {
+        padding: 0.5rem;
+    }
+}

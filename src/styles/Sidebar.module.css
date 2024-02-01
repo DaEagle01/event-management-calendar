@@ -1,15 +1,16 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 .sidebarContainer {
     display: grid;
     grid-column: span 2 / span 2;
     background-color: #f2f2f2;
-    height: 100vh;
+    height: calc(100vh - 2.5rem);
     position: sticky;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     padding: 1rem;
     overflow: auto;
 }
@@ -17,7 +18,8 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-    gap: 0.7rem
+    gap: 0.7rem;
+    overflow: auto;
 }
 
 .sidebarOptions {
@@ -64,6 +66,49 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .sidebarContainer {
+        width: max-content;
+        grid-column: span 1 / span 1;
+        padding: 0.5rem !important;
+    }
+
+    .sidebar {
+        width: max-content;
+    }
+
+    .sidebarOptions,
+    .sidebarOptionsActive {
+        width: max-content;
+        padding: 0.5rem;
+    }
+
+    .optionText {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebarContainer {
+        width: max-content;
+        grid-column: span 2 / span 2;
+        padding: 1rem;
+    }
+
+    .sidebar {
+        width: max-content;
+    }
+
+    .sidebarOptions,
+    .sidebarOptionsActive {
+        width: max-content;
+    }
+
+    .optionText {
+        display: none;
+    }
 }
 
 @media (min-width: 1024px) {

@@ -31,22 +31,22 @@ const CreateEventForm = () => {
 
     return (
         <form onSubmit={handleSubmit} className={styles.form}>
-            <label>
-                Title:
+            <div>
+                <label>Title</label>
                 <input type="text" name="title" required />
-            </label>
-            <label>
-                Description:
+            </div>
+            <div>
+                <label>Description</label>
                 <textarea name="description" />
-            </label>
-            <label>
-                Start Date:
+            </div>
+            <div>
+                <label> Start Date</label>
                 <input type="date" name="startDate" required defaultValue={selectedEventData?.start} />
-            </label>
-            <label>
-                End Date:
+            </div>
+            <div>
+                <label>End Date</label>
                 <input type="date" name="endDate" required defaultValue={selectedEventData?.end} />
-            </label>
+            </div>
             <button type="submit">Submit</button>
         </form>
     );
